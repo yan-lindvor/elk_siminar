@@ -22,3 +22,19 @@ post my-index-000003/_doc
     ]
   }
 }
+
+
+put my-index-000003/_doc/1
+{
+  "somefiled":  "1.23"
+}
+
+put my-index-000003/_doc/2
+{
+  "float-somefiled":  "1.23"
+}
+
+put my-index-000003/_doc/3
+{
+  "full-somefiled":  "this. is some text"
+}
