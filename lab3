@@ -1,0 +1,24 @@
+post my-index-000003/_doc
+{
+  "mappings": {
+    "dynamic_templates": [
+      {
+        "string_as_float": {
+          "match_mapping_type": "string",
+          "match": "float-*",
+          "runtime": {
+            "type": "float"
+          }
+        },
+        "string_as_fulltext": {
+          "match_mapping_type": "string",
+          "match": "full-*",
+          "runtime": {
+            "type": "text"
+          }
+        }
+        
+      }
+    ]
+  }
+}
