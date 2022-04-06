@@ -3,8 +3,7 @@ PUT new_movies
   "mappings": {
 
       "properties": {
-        "genere" : {"type": "object"},
-        "name": {"type": "keyword"},
+         "name": {"type": "keyword"},
         "year": {"type": "date"},
         "rating": {"type": "long"}
         
