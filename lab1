@@ -1,12 +1,16 @@
 PUT new_movies
 {
   "mappings": {
-
       "properties": {
-         "name": {"type": "keyword"},
+        "genere" :{"type": "keyword"},
+        "name": {
+            "type": "text",
+            "fields": {
+              "keyword" :{"type": "keyword"}
+            }
+        },
         "year": {"type": "date"},
-        "rating": {"type": "long"}
-        
+        "rating": {"type": "integer"}
       }
     }
   }
